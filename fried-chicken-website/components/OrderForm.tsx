@@ -109,21 +109,21 @@ export default function OrderForm() {
 
     const orderItems = selectedItems
       .map((item) => `${item.name} x${item.quantity} - ₹${item.price * item.quantity}`)
-      .join("\\n");
+      .join("\n");
 
     const deliveryFeeText = deliveryFeeEnabled 
-      ? (deliveryFee > 0 ? `*Delivery Fee:* ₹${deliveryFee}\\n` : "*Delivery:* Free\\n")
+      ? (deliveryFee > 0 ? `*Delivery Fee:* ₹${deliveryFee}\n` : "*Delivery:* Free\n")
       : "";
 
     const message = encodeURIComponent(
-      `🛒 *New Order*\\n\\n` +
-      `*Name:* ${name}\\n` +
-      `*Phone:* ${phone}\\n` +
-      `*Address:* ${address}\\n\\n` +
-      `*Order Details:*\\n${orderItems}\\n\\n` +
-      `*Items Total:* ₹${getItemsTotal()}\\n` +
+      `🛒 *New Order*\n\n` +
+      `*Name:* ${name}\n` +
+      `*Phone:* ${phone}\n` +
+      `*Address:* ${address}\n\n` +
+      `*Order Details:*\n${orderItems}\n\n` +
+      `*Items Total:* ₹${getItemsTotal()}\n` +
       deliveryFeeText +
-      `*Total:* ₹${getTotalPrice()}\\n\\n` +
+      `*Total:* ₹${getTotalPrice()}\n\n` +
       `${notes ? `*Notes:* ${notes}` : ""}`
     );
 
