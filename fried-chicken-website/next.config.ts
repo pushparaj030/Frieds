@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 
+const repoName = "friedchicken";
+
 const nextConfig: NextConfig = {
+  output: "export",
+
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -9,6 +14,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+
+  basePath: `/${repoName}`,
+  assetPrefix: `/${repoName}/`,
 };
 
 export default nextConfig;
