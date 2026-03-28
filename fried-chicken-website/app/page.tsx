@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className={`flex-1 pt-16 sm:pt-20 ${totalItems > 0 ? "pb-28" : ""}`}>
+      <main className={`flex-1 pt-14 sm:pt-20 ${totalItems > 0 ? "pb-28" : ""}`}>
         <Hero />
         <FeaturedItems />
         <FullMenu />

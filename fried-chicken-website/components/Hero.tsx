@@ -10,7 +10,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 pb-4 sm:pt-20 sm:pb-8 md:pt-0 md:pb-0">
+    <section className="relative min-h-[85vh] sm:min-h-screen flex items-center justify-center overflow-hidden pt-6 pb-2 sm:pt-20 sm:pb-8 md:pt-0 md:pb-0">
       <div className="absolute inset-0 bg-gradient-to-br from-dark via-dark-gray to-dark">
         <div className="absolute inset-0">
           <div className="absolute top-10 md:top-20 left-4 md:left-10 w-48 md:w-72 h-48 md:h-72 bg-primary rounded-full blur-[100px] md:blur-[120px] opacity-30 animate-pulse" />
@@ -33,11 +33,11 @@ export default function Hero() {
           <span className="text-white block mt-2 md:mt-0">Fried Chicken</span>
         </h1>
         
-        <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8 md:mb-12 max-w-xl md:max-w-2xl mx-auto leading-relaxed animate-slide-up" style={{ animationDelay: "200ms" }}>
+        <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-5 md:mb-12 max-w-xl md:max-w-2xl mx-auto leading-relaxed animate-slide-up" style={{ animationDelay: "200ms" }}>
           Fresh. Crunchy. Delivered Fast.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center mb-12 md:mb-16 animate-slide-up" style={{ animationDelay: "300ms" }}>
+        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center mb-6 md:mb-16 animate-slide-up" style={{ animationDelay: "300ms" }}>
           <button 
             onClick={scrollToMenu} 
             className="btn-primary text-base md:text-lg px-6 md:px-10 py-3 md:py-4 w-full sm:w-auto group"
@@ -64,7 +64,7 @@ export default function Hero() {
           {[
             { value: "50+", label: "Menu Items", icon: "🍗" },
             { value: "10K+", label: "Happy Customers", icon: "❤️" },
-            { value: "30min", label: "Fast Delivery", icon: "🚀" },
+            { value: "10min", label: "Fast Delivery", icon: "🚀" },
           ].map((stat, index) => (
             <div 
               key={index} 
