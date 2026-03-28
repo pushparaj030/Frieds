@@ -15,8 +15,8 @@ const nextConfig: NextConfig = {
     ],
   },
 
-  basePath: `/${repoName}`,
-  assetPrefix: `/${repoName}/`,
+  basePath: process.env.NODE_ENV === "production" ? `/${repoName}` : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? `/${repoName}/` : "",
 };
 
 export default nextConfig;
